@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <style>
+    #navbar {
+      display: flex;
+      justify-content: space-between;
+      height: 30px;
+      width: 100%;
+      /* border: 1px solid; */
+    }
+
+    #left,
+    #right {
+      display: flex;
+      height: 100%;
+      width: 25%;
+      /* border: 1px solid; */
+    }
+
+    #right div {
+      height: 90%;
+      width: 20%;
+      margin: auto;
+      font-size: 18px;
+      /* border: 1px solid; */
+    }
+
+    #menu {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      /* gap: 40px; */
+      width: 90%;
+      margin: auto;
+      /* border: 1px solid; */
+    }
+
+    #menu>div {
+      height: 350px;
+      width: 80%;
+      margin: 25px;
+      border: 1.5px solid gray;
+    }
+
+    p {
+      text-align: center;
+      font-size: 18px;
+    }
+
+    img {
+      height: 60%;
+      width: 100%;
+    }
+
+    #add_to_bucket {
+      padding: 5px;
+      margin-left: 110px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="navbar">
+    <div id="left"></div>
+    <div id="right">
+      <div id="">Sign-up</div>
+      <div id="">Login</div>
+      <div>items</div>
+      <div id="go_to_bucket"><a href="bucket.html">bucket</a></div>
+      <div id="coffee_count">0
+      </div>
+    </div>
+
+    <!--Add navbar divs here-->
+    <!-- Link to bucket.html -->
+    <!-- <div id=""> -->
+    <!--Show total number of coffee added to bucket here, do not add anything only Total count. Not even "Count - 5" but like this "5" -->
+    <!-- </div> -->
+  </div>
+
+  <div id="menu">
+    <!-- <div id="contain"></div> -->
+    <!--Show coffee list here in grid format-->
+    <!-- add an add to bucket button to each item, give it HTML id as 'add_to_bucket' -->
+  </div>
+</body>
+
+</html>
+<script src="./scripts/index.js"></script>
